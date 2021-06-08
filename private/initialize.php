@@ -1,6 +1,8 @@
 <?php
 ob_start();
 
+session_start(); //start session
+
 define("PRIVATE_PATH", dirname(__FILE__));
 define("PROJECT_PATH", dirname(PRIVATE_PATH));
 define("PUBLIC_PATH", PROJECT_PATH . '/public');
