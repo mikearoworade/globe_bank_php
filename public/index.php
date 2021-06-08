@@ -5,7 +5,7 @@
 $preview = false;
 if(isset($_GET['preview'])){
     //reviewing should require admin to be logged on 
-    $preview = $_GET['preview'] == 'true' ? true : false;
+    $preview = $_GET['preview'] == 'true' && is_logged_in() ? true : false;
 }
 $visible = !$preview; //disable invisibility
 
